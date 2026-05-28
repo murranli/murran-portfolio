@@ -1,3 +1,43 @@
+# AI Governance
+
+This project values long-term system stability over short-term implementation convenience.
+
+The system must remain:
+
+* design-system-driven
+* MDX-native
+* AI-maintainable
+* editorial-first
+* dependency-minimal
+
+Avoid:
+
+* unnecessary abstractions
+* unnecessary dependencies
+* component explosion
+* duplicated patterns
+* hardcoded visual values
+* one-off implementations
+
+---
+
+# Before Every Task
+
+Before implementing any change:
+
+1. Re-read ARCHITECTURE.md
+2. Re-read design-system/design.md
+3. Check existing primitives
+4. Check existing semantic tokens
+5. Check whether the problem can be solved using existing systems
+6. Avoid introducing unnecessary dependencies
+7. Prefer extending primitives over creating isolated components
+8. Prefer semantic tokens over hardcoded values
+9. Preserve intrinsic layout behavior
+10. Preserve vertical editorial flow
+
+Do not begin implementation before completing the above checks.
+
 # AI Agent Rules
 
 This file defines how Codex and other AI agents should work in this repository.
@@ -92,3 +132,8 @@ Keep edits scoped to the request.
 Do not add functionality during governance tasks. Do not refactor unrelated code while updating documentation, package management, or maintenance policy.
 
 Run `corepack pnpm typecheck` after TypeScript or package changes. Run `corepack pnpm build` when changes affect Next.js configuration, MDX, routing, or production behavior.
+
+## Behavior Guidance
+
+- When uncertain, prefer simpler systems.
+- Every new dependency must justify its long-term maintenance cost.
