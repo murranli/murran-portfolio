@@ -78,6 +78,15 @@ web_modules/
 .next
 out
 
+# Local system files
+.DS_Store
+
+# Build output
+dist/
+
+# TypeScript incremental cache
+tsconfig.tsbuildinfo
+
 # Nuxt.js build / generate output
 .nuxt
 dist

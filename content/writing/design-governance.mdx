@@ -1,0 +1,23 @@
+export const frontmatter = {
+  title: "设计治理先于页面实现",
+  description: "记录这个作品集如何通过 token、primitive 和 MDX 规则降低长期维护熵。",
+  category: "设计系统",
+  date: "2026-05-28",
+  tags: ["Design Governance", "Tokens", "MDX"]
+};
+
+# 设计治理先于页面实现
+
+作品集增长到一定规模后，真正的难点不是多做几个页面，而是让每一次新增都不会制造新的视觉孤岛。
+
+## 从 token 开始
+
+Foundation token 描述稳定的基础值，semantic token 描述组件可以消费的语义，theme mapping 再把语义映射到具体气质。组件只消费语义 token，因此主题可以改变氛围，但不改变组件逻辑。
+
+## Primitive 是布局语法
+
+`Container`、`Section`、`Stack`、`Flow`、`Prose` 和 `MediaBlock` 不是业务组件。它们描述内容如何自然流动，并把页面维持在移动优先、可阅读、可扩展的结构里。
+
+## MDX 只做内容
+
+MDX 可以承载叙事组件，例如指标、时间线、过程步骤和引用，但不应该写内联样式、随意 Tailwind 类名或页面级布局逻辑。内容越克制，系统越稳定。

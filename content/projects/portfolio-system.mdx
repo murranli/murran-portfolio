@@ -1,0 +1,33 @@
+export const frontmatter = {
+  title: "个人作品集系统",
+  description: "一个由设计系统、MDX 内容和主题治理共同驱动的长期作品集框架。",
+  category: "系统架构",
+  date: "2026-05-28",
+  tags: ["Next.js", "MDX", "Design System"]
+};
+
+# 个人作品集系统
+
+这个项目不是传统意义上的个人主页，而是一个可以长期增长的中文内容发布系统。它把作品、写作和笔记都看作结构化文档，再由设计系统提供稳定的阅读和展示秩序。
+
+<Callout>
+核心目标不是视觉复杂度，而是让内容在多年以后仍然容易扩展、迁移、审阅和被 AI 协作维护。
+</Callout>
+
+<Metrics items={[
+  { label: "内容模型", value: "MDX Native" },
+  { label: "界面策略", value: "Primitive Driven" },
+  { label: "主题方式", value: "Atmosphere Mapping" }
+]} />
+
+## 架构原则
+
+系统遵循内容优先、设计系统驱动、MDX 原生和 AI 友好维护四个原则。页面本身不承担复杂布局逻辑，内容也不直接决定全局视觉风格。
+
+## 初版范围
+
+初版框架包含 App Router、主题解析、基础 token、语义 token、primitive 组件、中文首页、项目列表、写作列表和 MDX 详情页。后续新增内容时，应优先扩展内容文件，而不是复制页面结构。
+
+## 治理规则
+
+新增 UI 之前先检查 `/design-system/design.md`。如果已有 primitive 能表达需求，就复用现有 primitive；如果需要新能力，先补 token 和 primitive，再进入页面实现。

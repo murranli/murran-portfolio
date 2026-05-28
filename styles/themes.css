@@ -1,0 +1,36 @@
+:root,
+[data-theme="dawn"] {
+  color-scheme: light;
+  --surface-page: var(--color-paper-50);
+  --surface-raised: #ffffff;
+  --surface-muted: var(--color-paper-100);
+  --surface-hero: #e8eee8;
+  --text-primary: var(--color-graphite-900);
+  --text-secondary: var(--color-graphite-500);
+  --text-inverse: #f8faf7;
+  --border-subtle: rgb(36 40 36 / 0.14);
+  --accent-primary: var(--color-sage-700);
+  --accent-secondary: var(--color-amber-400);
+  --accent-tertiary: var(--color-sky-300);
+  --focus-ring: rgb(47 107 84 / 0.35);
+  --font-body: var(--font-system-body);
+  --font-display: var(--font-system-display);
+}
+
+[data-theme="ink"] {
+  color-scheme: dark;
+  --surface-page: #111512;
+  --surface-raised: #1b211d;
+  --surface-muted: #242b26;
+  --surface-hero: #172019;
+  --text-primary: #eef3ed;
+  --text-secondary: #aab6aa;
+  --text-inverse: #111512;
+  --border-subtle: rgb(238 243 237 / 0.14);
+  --accent-primary: var(--color-moss-300);
+  --accent-secondary: var(--color-sky-300);
+  --accent-tertiary: var(--color-amber-400);
+  --focus-ring: rgb(159 186 122 / 0.34);
+  --font-body: var(--font-system-body);
+  --font-display: var(--font-system-display);
+}
